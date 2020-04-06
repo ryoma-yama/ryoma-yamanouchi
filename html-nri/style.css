@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* 共通 */
+p {
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav */
+.breadcrumb li::after {
+    content: " >";
+}
+
+.breadcrumb li:last-child::after {
+    content: none;
+}
+
+/* main */
+.title-img-img {
+    max-width: 100%;
+}
