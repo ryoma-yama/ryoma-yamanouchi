@@ -71,7 +71,7 @@ header {
 }
 
 .header-menu li:nth-child(9) {
-    margin-left: 10px;
+    margin-left: 10%;
 }
 
 .header-menu li:not(:first-child):not(:nth-child(n+9)) a{
@@ -120,7 +120,7 @@ header {
 }
 
 .header-menu li:first-child {
-    padding-left: 37px;
+    padding-left: 10%;
     margin-right: auto;
     margin-top: -1px;
 }
