@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="家具屋課題のCONTACTページです。">
+    <title>家具屋課題のCONTACTページ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <img class="header-nav__img" src="images/logo_header.png" srcset="images/logo_header.png 1x, images/logo_header@2x.png 2x" alt="htmlcss-header">
+        <ul class="header-nav__menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="recruit.html">RECRUIT</a></li>
+          <li class="current-page"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="main-article">
+        <h1 class="h1-contact">CONTACT</h1>
+        <article class="main-others">
+          <h2 class="main-others__heading--contact">お問い合わせ</h2>
+          <!-- SmartPhoneで消えます -->
+          <p class="main-others__paragraph--contact">オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。</p>
+          <!-- /SmartPhoneで消えます -->
+          <form class="main-others__form--contact" action="#" method="post">
+            <p><input type="text" name="name" id="name-field" placeholder="お名前"></p>
+            <p><input type="email" name="email" id="email-field" placeholder="メールアドレス"></p>
+            <p><textarea name="comment" id="comment" placeholder="お問い合わせ内容"></textarea></p>
+            <p><input type="submit" name="submit" value="SEND" id="submit"></p>
+          </form>
+        </article>
+      </article>
+    </main>
+    <footer>
+      <nav class="footer-nav">
+        <img class="footer-nav__img" src="images/logo_footer.png" srcset="images/logo_footer.png 1x, images/logo_footer@2x.png 2x" alt="htmlcss-footer">
+        <ul class="footer-nav__menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="recruit.html">RECRUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copyright"><small>&copy;HTMLCSS.code</small></p>
+    </footer>
+  </body>
+</html>
