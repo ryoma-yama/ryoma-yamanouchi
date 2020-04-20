@@ -1,22 +1,28 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  background: #FCFCFC 0% 0% no-repeat padding-box;
-  color: #3B3B3B;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  color: #3b3b3b;
 }
 
-p, h1, h2, ul, figure {
+p,
+h1,
+h2,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #B2B2B2;
+  color: #b2b2b2;
   text-decoration: none;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -68,7 +74,7 @@ a {
 }
 
 .header-nav .current-page a {
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .footer-nav {
@@ -79,7 +85,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #918F89;
+  background: #918f89;
 }
 
 .footer-nav__img {
@@ -112,16 +118,16 @@ a {
 .footer-nav a {
   font-size: 18px;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-copyright {
   padding: 0% 0% 1.87% 0%;
-  background: #918F89;
+  background: #918f89;
   text-align: center;
   font-size: 11px;
   letter-spacing: 0.44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-article {
@@ -138,8 +144,8 @@ a {
   line-height: 73px;
   font-weight: normal;
   letter-spacing: 2.65px;
-  color: #918F89;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  color: #918f89;
+  background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 0.8;
   margin: 0% 0% 32.26% 0%;
 }
@@ -185,7 +191,8 @@ a {
   letter-spacing: 0.36px;
 }
 
-.home-article__paragraph span:nth-child(3), .home-article__paragraph span:nth-child(5) {
+.home-article__paragraph span:nth-child(3),
+.home-article__paragraph span:nth-child(5) {
   display: block;
 }
 
@@ -236,8 +243,8 @@ a {
   left: 41px;
   font-size: 17px;
   letter-spacing: -0.85px;
-  color: #FFFFFF;
-  text-shadow: 0px 0px 6px #000000E0;
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #000000e0;
   opacity: 1;
 }
 
@@ -280,7 +287,7 @@ a {
 
 .main-others__button--catalog {
   text-align: center;
-  background: #D1D1D1;
+  background: #d1d1d1;
   border-radius: 40px;
   max-width: 344px;
   margin: 0 auto;
@@ -298,14 +305,15 @@ a {
   margin: 0% 0% 5.24% 0%;
 }
 
-.main-others__form--contact input, .main-others__form--contact textarea {
+.main-others__form--contact input,
+.main-others__form--contact textarea {
   width: 100%;
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
   font-size: 12px;
   letter-spacing: 0.6px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   opacity: 0.4;
   padding: 10px 16px;
 }
@@ -322,7 +330,7 @@ a {
 
 .main-others__form--contact p:nth-child(4) input {
   border: none;
-  background: #D1D1D1;
+  background: #d1d1d1;
   font-size: 14px;
   letter-spacing: 1.4px;
   color: #707070;
@@ -341,13 +349,16 @@ a {
   content: "›";
 }
 
-table, td, th {
+table,
+td,
+th {
   border: 1px solid #707070;
   border-collapse: collapse;
   border-radius: 4px;
 }
 
-td, th {
+td,
+th {
   padding: 3px;
 }
 
