@@ -35,9 +35,7 @@ a {
 .main-article-contact,
 .h1-news,
 .h1-recruit,
-.h1-contact,
-.main-home,
-.main-news {
+.h1-contact {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -131,18 +129,27 @@ a {
 }
 
 .main-article-recruit {
-  padding-top: 274px;
+  padding-top: 192px;
   background: 0 0 / contain url(images/recruit_top.png) no-repeat padding-box;
 }
 
 .main-article-contact {
-  padding-top: 274px;
+  padding-top: 192px;
   background: 0 0 / contain url(images/contact_top.png) no-repeat padding-box;
+}
+
+.h1-news,
+.h1-recruit,
+.h1-contact {
+  font-weight: normal;
+  font: normal 30px/53px "Noto Sans JP";
+  letter-spacing: 3px;
+  padding-left: 228px;
+  margin-bottom: 384px;
 }
 
 .h1-home {
   width: 609px;
-  box-sizing: border-box;
   padding: 32px 0 32px 88px;
   font: normal 53px/73px "Noto Sans JP";
   letter-spacing: 2.65px;
@@ -152,18 +159,20 @@ a {
 }
 
 .h1-news {
-  text-align: left;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 53px;
-  letter-spacing: 3px;
   color: #918f89;
-  padding-left: 228px;
-  margin-bottom: 384px;
+}
+
+.h1-recruit {
+  color: #918f89;
+}
+
+.h1-contact {
+  color: #fcfcfc;
 }
 
 .main-home {
-  padding: 0 88px;
+  max-width: 1104px;
+  margin: 0 auto;
   margin-bottom: 240px;
   display: flex;
   justify-content: center;
@@ -201,16 +210,32 @@ a {
   width: 100%;
 }
 
-.main-news {
-  padding: 0 96px;
-  margin-bottom: 240px;
-}
-
-.main-news__heading {
+.main-news__heading,
+.main-news__heading--page,
+.main-recruit__heading--recruit {
   text-align: center;
   font: normal 23px/53px "Noto Sans JP";
   letter-spacing: 2.3px;
+}
+
+.main-news {
+  max-width: 1088px;
+  margin: 0 auto;
+  margin-bottom: 240px;
+}
+
+.main-news__page {
+  max-width: 1088px;
+  margin: 0 auto;
+  margin-bottom: 320px;
+}
+
+.main-news__heading {
   margin-bottom: 48px;
+}
+
+.main-news__heading--page {
+  margin-bottom: 56px;
 }
 
 .main-news__unordered-list {
@@ -274,6 +299,23 @@ a {
   color: #919191;
 }
 
+.main-others__heading--catalog,
+.main-others__heading--contact,
+.main-others__heading--recruit,
+.main-others__contact-page--heading {
+  text-align: center;
+  font: normal 24px/53px "Noto Sans JP";
+  letter-spacing: 2.4px;
+}
+
+.main-others__paragraph--catalog,
+.main-others__paragraph--recruit {
+  text-align: center;
+  font: normal 15px/30px "Noto Sans JP";
+  letter-spacing: 0.45px;
+  padding-bottom: 40px;
+}
+
 .main-others {
   max-width: 460px;
   margin: 0 auto;
@@ -284,25 +326,16 @@ a {
   margin-bottom: 320px;
 }
 
-.main-others .main-others__heading--catalog,
-.main-others .main-others__heading--contact,
-.main-others .main-others__heading--recruit {
-  text-align: center;
-  font: normal 24px/53px "Noto Sans JP";
-  letter-spacing: 2.4px;
-  margin-bottom: 47px;
-}
-
 .main-others__heading--catalog {
   margin-bottom: 48px;
 }
 
-.main-others .main-others__paragraph--catalog,
-.main-others .main-others__paragraph--recruit {
-  text-align: center;
-  font: normal 15px/30px "Noto Sans JP";
-  letter-spacing: 0.45px;
-  padding-bottom: 40px;
+.main-others__heading--contact {
+  margin-bottom: 47px;
+}
+
+.main-others__heading--recruit {
+  margin-bottom: 48px;
 }
 
 .main-others__button--catalog {
@@ -379,20 +412,96 @@ a {
   color: #919191;
 }
 
-table,
-td,
-th {
+.main-recruit {
+  margin: 0 auto;
+  margin-bottom: 320px;
+}
+
+.main-recruit__heading--recruit {
+  margin-bottom: 32px;
+}
+
+table th,
+table li:first-child {
+  font: normal 16px/22px "Noto Sans JP";
+  letter-spacing: 0;
+}
+
+table {
+  width: 640px;
+  margin: 0 auto;
   border: 1px solid #707070;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: 4px;
+  overflow: hidden;
 }
 
-td,
-th {
-  padding: 3px;
+table th {
+  background: #dcdbd9;
+  font-weight: normal;
+  width: 144px;
+  border-bottom: 1px solid #707070;
 }
 
-th {
-  background: #707070;
+table td {
+  padding: 16px 0;
+  border-bottom: 1px solid #707070;
+  border-left: 1px solid #707070;
+}
+
+table tr:nth-child(4) th {
+  border-bottom: none;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table li {
+  list-style-type: none;
+  margin-left: 45px;
+}
+
+table li:first-child {
+  margin-bottom: 8px;
+}
+
+table .job-description li:not(:first-child) {
+  list-style-type: disc;
+  margin-left: 68px;
+  font: normal 14px/23px "Noto Sans JP";
+  letter-spacing: 0px;
+}
+
+table .salary li:not(:first-child) {
+  font: normal 14px/19px "Noto Sans JP";
+  letter-spacing: 0px;
+}
+
+table .work-time li:not(:first-child) {
+  font: normal 14px/21px "Noto Sans JP";
+  letter-spacing: 0px;
+}
+
+.main-others__contact-page {
+  max-width: 454px;
+  margin: 0 auto;
+  margin-bottom: 320px;
+}
+
+.main-others__contact-page--heading {
+  margin-bottom: 40px;
+}
+
+.main-others__contact-page--paragraph {
+  text-align: center;
+  font: normal 15px/53px "Noto Sans JP";
+  letter-spacing: 0.6px;
+  margin-bottom: 40px;
+  display: inline-block;
+  width: 541px;
+  white-space: nowrap;
+  margin-left: -39px;
 }
 /*# sourceMappingURL=style.css.map */
