@@ -365,6 +365,7 @@ a {
 .main-others__form--contact input::placeholder,
 .main-others__form--contact textarea::placeholder {
   font: normal 12px/53px "Noto Sans JP";
+  line-height: 1;
   letter-spacing: 0.6px;
   opacity: 0.4;
   color: #3b3b3b;
@@ -376,7 +377,7 @@ a {
 }
 
 .main-others__form--contact textarea {
-  padding: 0 0 178px 16px;
+  padding: 10px 16px 178px 16px;
   margin-bottom: 40px;
 }
 
