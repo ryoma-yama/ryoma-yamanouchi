@@ -44,12 +44,6 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 350px) {
-  header {
-    height: 56px;
-  }
-}
-
 .header-nav {
   padding: 0 96px;
   font: normal 16px/22px "Noto Sans JP";
@@ -59,14 +53,14 @@ a:hover {
   height: 56px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .header-nav {
     background: #918f89 url(images/logo_footer.png) 50% 50%/39.69px 24px
       no-repeat padding-box;
     position: fixed;
     z-index: 1;
     left: 0;
-    width: 350px;
+    width: 100%;
   }
 }
 
@@ -76,7 +70,7 @@ a:hover {
   align-self: center;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .header-nav__img {
     display: none;
   }
@@ -98,7 +92,7 @@ a:hover {
   margin-right: 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .header-nav__menu {
     display: none;
   }
@@ -108,7 +102,7 @@ a:hover {
   color: #3b3b3b;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   footer {
     height: 232px;
     background: #918f89;
@@ -123,7 +117,7 @@ a:hover {
   font: normal 18px/24px "Noto Sans JP";
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .footer-nav {
     background: url(images/logo_footer.png) 50% 50%/51.69px 32px no-repeat
       padding-box;
@@ -138,7 +132,7 @@ a:hover {
   align-self: center;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .footer-nav__img {
     display: none;
   }
@@ -149,7 +143,7 @@ a:hover {
   align-items: flex-end;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .footer-nav__menu {
     display: none;
   }
@@ -165,7 +159,7 @@ a:hover {
   margin-right: 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .footer-nav__menu {
     display: none;
   }
@@ -185,7 +179,7 @@ a:hover {
   color: #ffffff;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .footer-copyright {
     padding-bottom: 32px;
   }
@@ -196,9 +190,9 @@ a:hover {
   background: 0 0 / contain url(images/home_top.png) no-repeat padding-box;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-article {
-    padding-top: 180px;
+    padding-top: 200px;
     background: transparent url(images/home_top_sp.png) 0 0 / contain no-repeat
       padding-box;
   }
@@ -209,8 +203,9 @@ a:hover {
   background: 0 0 / contain url(images/news_top.png) no-repeat padding-box;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-article-news {
+    padding-top: 256px;
     background: transparent url(images/news_top_sp.png) 0 0 / contain no-repeat
       padding-box;
   }
@@ -221,7 +216,7 @@ a:hover {
   background: 0 0 / contain url(images/recruit_top.png) no-repeat padding-box;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-article-recruit {
     background: transparent url(images/recruit_top_sp.png) 0 0 / contain
       no-repeat padding-box;
@@ -233,7 +228,7 @@ a:hover {
   background: 0 0 / contain url(images/contact_top.png) no-repeat padding-box;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-article-contact {
     background: transparent url(images/contact_top_sp.png) 0 0 / contain
       no-repeat padding-box;
@@ -243,11 +238,25 @@ a:hover {
 .h1-news,
 .h1-recruit,
 .h1-contact {
-  font-weight: normal;
   font: normal 30px/53px "Noto Sans JP";
   letter-spacing: 3px;
+  color: #918f89;
   padding-left: 228px;
   margin-bottom: 384px;
+}
+
+@media (max-width: 375px) {
+  .h1-news,
+  .h1-recruit,
+  .h1-contact {
+    font: normal 25px/53px "Noto Sans JP";
+    line-height: 1;
+    letter-spacing: 2.5px;
+    color: #3b3b3b;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 576px;
+  }
 }
 
 .h1-home {
@@ -260,7 +269,7 @@ a:hover {
   margin-bottom: 413px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .h1-home {
     width: 184px;
     padding: 0;
@@ -268,25 +277,19 @@ a:hover {
     letter-spacing: 1.95px;
     background: none;
     margin-bottom: 416px;
+    height: 272px;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .h1-home span {
     display: inline-block;
     height: 80px;
     background: rgba(255, 255, 255, 0.6);
     padding: 16px 16px 16px 54px;
     margin-bottom: 16px;
+    line-height: 55px;
   }
-}
-
-.h1-news {
-  color: #918f89;
-}
-
-.h1-recruit {
-  color: #918f89;
 }
 
 .h1-contact {
@@ -302,7 +305,7 @@ a:hover {
   height: 560px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-home {
     max-width: 328px;
     display: block;
@@ -318,7 +321,7 @@ a:hover {
   padding: 240px 0 0 56px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .home-article {
     padding: 0;
   }
@@ -330,7 +333,7 @@ a:hover {
   margin-bottom: 71px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .home-article__heading {
     text-align: center;
     font: normal 21px/53px "Noto Sans JP";
@@ -345,7 +348,7 @@ a:hover {
   letter-spacing: 0.36px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .home-article__paragraph {
     text-align: center;
     font: normal 14px/35px "Noto Sans JP";
@@ -370,7 +373,7 @@ a:hover {
   width: 100%;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .home-image {
     background: transparent url(images/concept.png) 50% 50%/328px auto no-repeat
       padding-box;
@@ -398,12 +401,18 @@ a:hover {
   margin-bottom: 320px;
 }
 
+@media (max-width: 375px) {
+  .main-news__page {
+    margin-bottom: 256px;
+  }
+}
+
 .main-news__heading {
   line-height: 1;
   margin-bottom: 48px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__heading {
     font: normal 25px/53px "Noto Sans JP";
     line-height: 1;
@@ -413,7 +422,14 @@ a:hover {
 }
 
 .main-news__heading--page {
+  line-height: 1;
   margin-bottom: 56px;
+}
+
+@media (max-width: 375px) {
+  .main-news__heading--page {
+    margin-bottom: 32px;
+  }
 }
 
 .main-news__unordered-list {
@@ -423,14 +439,14 @@ a:hover {
   margin-bottom: 39px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list {
     display: block;
     margin-bottom: 32px;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list li {
     margin-bottom: 24px;
     text-align: center;
@@ -444,7 +460,7 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list li figure {
     max-width: 272px;
   }
@@ -459,7 +475,7 @@ a:hover {
   vertical-align: middle;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list li:nth-child(1) img {
     opacity: 0.6;
   }
@@ -470,7 +486,7 @@ a:hover {
   vertical-align: middle;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list li:nth-child(2) img {
     opacity: 0.6;
   }
@@ -481,7 +497,7 @@ a:hover {
   vertical-align: middle;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list li:nth-child(3) img {
     opacity: 0.6;
   }
@@ -491,7 +507,7 @@ a:hover {
   font: normal 17px/41px "Noto Sans JP";
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list li:nth-child(3) figcaption {
     font: normal 15px/32px "Noto Sans JP";
     letter-spacing: -0.75px;
@@ -511,7 +527,7 @@ a:hover {
   text-shadow: 0px 0px 6px #000000e0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__unordered-list figcaption {
     font: normal 15px/32px "Noto Sans JP";
     letter-spacing: -0.75px;
@@ -526,7 +542,7 @@ a:hover {
   line-height: 1;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-news__view-more {
     opacity: 1;
   }
@@ -566,7 +582,7 @@ a:hover {
   margin-bottom: 240px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others {
     max-width: 330px;
   }
@@ -576,7 +592,7 @@ a:hover {
   margin-bottom: 320px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others:nth-child(6) {
     margin-bottom: 240px;
   }
@@ -590,7 +606,7 @@ a:hover {
   margin-bottom: 47px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__heading--contact {
     line-height: 1;
     margin-bottom: 32px;
@@ -601,7 +617,7 @@ a:hover {
   margin-bottom: 48px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__heading--recruit {
     line-height: 1;
     margin-bottom: 32px;
@@ -612,7 +628,7 @@ a:hover {
   margin-bottom: 40px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__paragraph--catalog {
     font: normal 14px/27px "Noto Sans JP";
     letter-spacing: 0.42px;
@@ -623,7 +639,7 @@ a:hover {
   margin-bottom: 40px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__paragraph--recruit {
     font: normal 15px/30px "Noto Sans JP";
     letter-spacing: 0.45px;
@@ -639,7 +655,7 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__button--catalog {
     max-width: 280px;
     height: 56px;
@@ -671,7 +687,7 @@ a:hover {
   color: #3b3b3b;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact p {
     padding: 0 22px;
   }
@@ -682,7 +698,7 @@ a:hover {
   margin-bottom: 24px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact input {
     border: 0.5px solid #707070;
     border-radius: 11px;
@@ -692,7 +708,7 @@ a:hover {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact input::placeholder {
     font: normal 14px/53px "Noto Sans JP";
     letter-spacing: 0.7px;
@@ -704,7 +720,7 @@ a:hover {
   margin-bottom: 40px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact textarea {
     padding: 15px 17px 117px 17px;
     margin-bottom: 32px;
@@ -713,7 +729,7 @@ a:hover {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact textarea::placeholder {
     font: normal 14px/53px "Noto Sans JP";
     letter-spacing: 0.7px;
@@ -726,7 +742,7 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact .submit-uppercase-pc {
     max-width: 173px;
     display: none;
@@ -743,7 +759,7 @@ a:hover {
   opacity: 1;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact .submit-uppercase-pc input {
     font: normal 18px/53px "Noto Sans JP";
     letter-spacing: 0.9px;
@@ -755,7 +771,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__form--contact .submit-uppercase-sp {
     max-width: 173px;
     margin: 0 auto;
@@ -783,7 +799,7 @@ a:hover {
   line-height: 1;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .main-others__view-more--recruit {
     opacity: 1;
   }
