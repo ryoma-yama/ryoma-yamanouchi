@@ -3,7 +3,7 @@ body {
   margin: 0;
   background: #fcfcfc 0% 0% no-repeat padding-box;
   color: #3b3b3b;
-  font: normal 11px/22px "Noto Sans JP, sans-serif";
+  font: normal 11px/22px "Noto Sans", sans-serif;
 }
 
 p,
@@ -52,7 +52,7 @@ a:hover {
 
 .header-nav {
   padding: 0 96px;
-  font: normal 16px/22px "Noto Sans JP";
+  font: normal 16px/22px "Noto Sans";
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -120,7 +120,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   background: #918f89;
-  font: normal 18px/24px "Noto Sans JP";
+  font: normal 18px/24px "Noto Sans";
 }
 
 @media (max-width: 375px) {
@@ -197,7 +197,7 @@ a:hover {
   padding-bottom: 24px;
   background: #918f89;
   text-align: center;
-  font: normal 11px/16px "Noto Sans JP";
+  font: normal 11px/16px "Noto Sans";
   letter-spacing: 0.44px;
   color: #ffffff;
 }
@@ -267,7 +267,7 @@ a:hover {
 .h1-news,
 .h1-recruit,
 .h1-contact {
-  font: normal 30px/53px "Noto Sans JP";
+  font: normal 30px/53px "Noto Sans";
   letter-spacing: 3px;
   color: #918f89;
   padding-left: 228px;
@@ -278,7 +278,7 @@ a:hover {
   .h1-news,
   .h1-recruit,
   .h1-contact {
-    font: normal 25px/53px "Noto Sans JP";
+    font: normal 25px/53px "Noto Sans";
     line-height: 1;
     letter-spacing: 2.5px;
     color: #3b3b3b;
@@ -291,7 +291,7 @@ a:hover {
 .h1-home {
   width: 609px;
   padding: 32px 0 32px 88px;
-  font: normal 53px/73px "Noto Sans JP";
+  font: normal 53px/73px "Noto Sans";
   letter-spacing: 2.65px;
   color: #918f89;
   background: rgba(255, 255, 255, 0.8);
@@ -302,7 +302,7 @@ a:hover {
   .h1-home {
     width: 184px;
     padding: 0;
-    font: normal 39px/37px "Noto Sans JP";
+    font: normal 39px/37px "Noto Sans";
     letter-spacing: 1.95px;
     background: none;
     margin-bottom: 416px;
@@ -357,7 +357,7 @@ a:hover {
 }
 
 .home-article__heading {
-  font: normal 25px/53px "Noto Sans JP";
+  font: normal 25px/53px "Noto Sans";
   letter-spacing: 2.5px;
   margin-bottom: 71px;
 }
@@ -365,7 +365,7 @@ a:hover {
 @media (max-width: 375px) {
   .home-article__heading {
     text-align: center;
-    font: normal 21px/53px "Noto Sans JP";
+    font: normal 21px/53px "Noto Sans";
     letter-spacing: 2.1px;
     line-height: 1;
     margin-bottom: 32px;
@@ -373,14 +373,14 @@ a:hover {
 }
 
 .home-article__paragraph {
-  font: normal 12px/30px "Noto Sans JP";
+  font: normal 12px/30px "Noto Sans";
   letter-spacing: 0.36px;
 }
 
 @media (max-width: 375px) {
   .home-article__paragraph {
     text-align: center;
-    font: normal 14px/35px "Noto Sans JP";
+    font: normal 14px/35px "Noto Sans";
     letter-spacing: 0.42px;
     margin-bottom: 24px;
   }
@@ -414,7 +414,7 @@ a:hover {
 .main-news__heading--page,
 .main-recruit__heading--recruit {
   text-align: center;
-  font: normal 23px/53px "Noto Sans JP";
+  font: normal 23px/53px "Noto Sans";
   line-height: 1;
   letter-spacing: 2.3px;
 }
@@ -443,7 +443,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-news__heading {
-    font: normal 25px/53px "Noto Sans JP";
+    font: normal 25px/53px "Noto Sans";
     line-height: 1;
     letter-spacing: 2.5px;
     margin-bottom: 24px;
@@ -532,12 +532,12 @@ a:hover {
 }
 
 .main-news__unordered-list li:nth-child(3) figcaption {
-  font: normal 17px/41px "Noto Sans JP";
+  font: normal 17px/41px "Noto Sans";
 }
 
 @media (max-width: 375px) {
   .main-news__unordered-list li:nth-child(3) figcaption {
-    font: normal 15px/32px "Noto Sans JP";
+    font: normal 15px/32px "Noto Sans";
     letter-spacing: -0.75px;
   }
 }
@@ -549,7 +549,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font: normal 17px/50px "Noto Sans JP";
+  font: normal 17px/50px "Noto Sans";
   letter-spacing: -0.85px;
   color: #ffffff;
   text-shadow: 0px 0px 6px #000000e0;
@@ -557,7 +557,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-news__unordered-list figcaption {
-    font: normal 15px/32px "Noto Sans JP";
+    font: normal 15px/32px "Noto Sans";
     letter-spacing: -0.75px;
     text-shadow: none;
   }
@@ -565,7 +565,7 @@ a:hover {
 
 .main-news__view-more {
   text-align: center;
-  font: normal 18px/45px "Noto Sans JP";
+  font: normal 18px/45px "Noto Sans";
   opacity: 0.3;
   line-height: 1;
 }
@@ -593,7 +593,7 @@ a:hover {
 .main-others__contact-page--heading-pc,
 .main-others__contact-page--heading-sp {
   text-align: center;
-  font: normal 24px/53px "Noto Sans JP";
+  font: normal 24px/53px "Noto Sans";
   letter-spacing: 2.4px;
   line-height: 1;
 }
@@ -601,7 +601,7 @@ a:hover {
 .main-others__paragraph--catalog,
 .main-others__paragraph--recruit {
   text-align: center;
-  font: normal 15px/30px "Noto Sans JP";
+  font: normal 15px/30px "Noto Sans";
   letter-spacing: 0.45px;
 }
 
@@ -659,7 +659,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__paragraph--catalog {
-    font: normal 14px/27px "Noto Sans JP";
+    font: normal 14px/27px "Noto Sans";
     letter-spacing: 0.42px;
   }
 }
@@ -670,7 +670,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__paragraph--recruit {
-    font: normal 15px/30px "Noto Sans JP";
+    font: normal 15px/30px "Noto Sans";
     letter-spacing: 0.45px;
     margin-bottom: 24px;
   }
@@ -692,7 +692,7 @@ a:hover {
 }
 
 .main-others__button--catalog a {
-  font: normal 18px/53px "Noto Sans JP";
+  font: normal 18px/53px "Noto Sans";
   letter-spacing: 1.8px;
   color: #707070;
   display: block;
@@ -709,7 +709,7 @@ a:hover {
 
 .main-others__form--contact input::placeholder,
 .main-others__form--contact textarea::placeholder {
-  font: normal 12px/53px "Noto Sans JP";
+  font: normal 12px/53px "Noto Sans";
   line-height: 1;
   letter-spacing: 0.6px;
   opacity: 0.4;
@@ -739,7 +739,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__form--contact input::placeholder {
-    font: normal 14px/53px "Noto Sans JP";
+    font: normal 14px/53px "Noto Sans";
     line-height: 1;
     letter-spacing: 0.7px;
   }
@@ -761,7 +761,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__form--contact textarea::placeholder {
-    font: normal 14px/53px "Noto Sans JP";
+    font: normal 14px/53px "Noto Sans";
     letter-spacing: 0.7px;
     line-height: 1;
   }
@@ -782,7 +782,7 @@ a:hover {
 .main-others__form--contact .submit-uppercase-pc input {
   border: none;
   background: #d1d1d1;
-  font: normal 14px/53px "Noto Sans JP";
+  font: normal 14px/53px "Noto Sans";
   letter-spacing: 1.4px;
   line-height: 1;
   color: #707070;
@@ -791,7 +791,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__form--contact .submit-uppercase-pc input {
-    font: normal 18px/53px "Noto Sans JP";
+    font: normal 18px/53px "Noto Sans";
     letter-spacing: 0.9px;
     line-height: 1;
   }
@@ -811,7 +811,7 @@ a:hover {
   .main-others__form--contact .submit-uppercase-sp input {
     border: none;
     background: #d1d1d1;
-    font: normal 18px/53px "Noto Sans JP";
+    font: normal 18px/53px "Noto Sans";
     letter-spacing: 0.9px;
     line-height: 1;
     color: #707070;
@@ -824,7 +824,7 @@ a:hover {
 
 .main-others__view-more--recruit {
   text-align: center;
-  font: normal 18px/45px "Noto Sans JP";
+  font: normal 18px/45px "Noto Sans";
   opacity: 0.3;
   line-height: 1;
 }
@@ -869,7 +869,7 @@ a:hover {
 
 table th,
 table li:first-child {
-  font: normal 16px/22px "Noto Sans JP";
+  font: normal 16px/22px "Noto Sans";
   letter-spacing: 0;
 }
 
@@ -897,7 +897,7 @@ table th {
 
 @media (max-width: 375px) {
   table th {
-    font: normal 14px/19px "Noto Sans JP";
+    font: normal 14px/19px "Noto Sans";
     padding: 0 7px;
   }
 }
@@ -933,44 +933,55 @@ table li:first-child {
 
 @media (max-width: 375px) {
   table li:first-child {
-    font: normal 15px/20px "Noto Sans JP";
+    font: normal 15px/20px "Noto Sans";
   }
 }
 
 table .job-description li:not(:first-child) {
-  list-style-type: disc;
-  margin-left: 68px;
-  font: normal 14px/23px "Noto Sans JP";
+  margin-left: 58px;
+  font: normal 14px/23px "Noto Sans";
   letter-spacing: 0px;
+}
+
+table .job-description li:not(:first-child):before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #3b3b3b;
+  position: relative;
+  left: -7px;
+  top: -3px;
 }
 
 @media (max-width: 375px) {
   table .job-description li:not(:first-child) {
-    margin-left: 48px;
-    font: normal 13px/23px "Noto Sans JP";
+    margin-left: 38px;
+    font: normal 13px/23px "Noto Sans";
     margin-bottom: 0;
   }
 }
 
 table .salary li:not(:first-child) {
-  font: normal 14px/19px "Noto Sans JP";
+  font: normal 14px/19px "Noto Sans";
   letter-spacing: 0px;
 }
 
 @media (max-width: 375px) {
   table .salary li:not(:first-child) {
-    font: normal 13px/18px "Noto Sans JP";
+    font: normal 13px/18px "Noto Sans";
   }
 }
 
 table .work-time li:not(:first-child) {
-  font: normal 14px/21px "Noto Sans JP";
+  font: normal 14px/21px "Noto Sans";
   letter-spacing: 0px;
 }
 
 @media (max-width: 375px) {
   table .work-time li:not(:first-child) {
-    font: normal 13px/21px "Noto Sans JP";
+    font: normal 13px/21px "Noto Sans";
   }
 }
 
@@ -1010,7 +1021,7 @@ table .work-time li:not(:first-child) {
 
 .main-others__contact-page--paragraph {
   text-align: center;
-  font: normal 15px/53px "Noto Sans JP";
+  font: normal 15px/53px "Noto Sans";
   letter-spacing: 0.6px;
   margin-bottom: 40px;
   display: inline-block;
