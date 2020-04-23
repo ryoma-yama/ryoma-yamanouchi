@@ -125,10 +125,10 @@ a:hover {
 
 @media (max-width: 375px) {
   .footer-nav {
-    background: url(images/logo_footer.png) 50% 50%/51.69px 32px no-repeat
-      padding-box;
     padding: 0;
     height: 186px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -141,6 +141,23 @@ a:hover {
 @media (max-width: 375px) {
   .footer-nav__img {
     display: none;
+  }
+}
+
+.footer-nav > a {
+  margin: 0 auto;
+}
+
+.footer-nav__img--sp {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .footer-nav__img--sp {
+    display: block;
+    width: 51.69px;
+    height: 32px;
+    margin: 0 auto;
   }
 }
 
@@ -212,6 +229,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-article-news {
+    margin-top: -56px;
     padding-top: 256px;
     background: transparent url(images/news_top_sp.png) 0 0 / contain no-repeat
       padding-box;
@@ -225,6 +243,8 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-article-recruit {
+    margin-top: -56px;
+    padding-top: 256px;
     background: transparent url(images/recruit_top_sp.png) 0 0 / contain
       no-repeat padding-box;
   }
@@ -237,6 +257,8 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-article-contact {
+    margin-top: -56px;
+    padding-top: 256px;
     background: transparent url(images/contact_top_sp.png) 0 0 / contain
       no-repeat padding-box;
   }
@@ -393,6 +415,7 @@ a:hover {
 .main-recruit__heading--recruit {
   text-align: center;
   font: normal 23px/53px "Noto Sans JP";
+  line-height: 1;
   letter-spacing: 2.3px;
 }
 
@@ -415,7 +438,6 @@ a:hover {
 }
 
 .main-news__heading {
-  line-height: 1;
   margin-bottom: 48px;
 }
 
@@ -429,7 +451,6 @@ a:hover {
 }
 
 .main-news__heading--page {
-  line-height: 1;
   margin-bottom: 56px;
 }
 
@@ -569,7 +590,8 @@ a:hover {
 .main-others__heading--catalog,
 .main-others__heading--contact,
 .main-others__heading--recruit,
-.main-others__contact-page--heading {
+.main-others__contact-page--heading-pc,
+.main-others__contact-page--heading-sp {
   text-align: center;
   font: normal 24px/53px "Noto Sans JP";
   letter-spacing: 2.4px;
@@ -718,6 +740,7 @@ a:hover {
 @media (max-width: 375px) {
   .main-others__form--contact input::placeholder {
     font: normal 14px/53px "Noto Sans JP";
+    line-height: 1;
     letter-spacing: 0.7px;
   }
 }
@@ -729,7 +752,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__form--contact textarea {
-    padding: 15px 17px 117px 17px;
+    padding: 15px 17px 108px 17px;
     margin-bottom: 32px;
     border: 0.5px solid #707070;
     border-radius: 11px;
@@ -832,6 +855,18 @@ a:hover {
   margin-bottom: 32px;
 }
 
+@media (max-width: 375px) {
+  .main-recruit__heading--recruit {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-recruit {
+    margin-bottom: 256px;
+  }
+}
+
 table th,
 table li:first-child {
   font: normal 16px/22px "Noto Sans JP";
@@ -848,11 +883,23 @@ table {
   overflow: hidden;
 }
 
+@media (max-width: 375px) {
+  table {
+    width: 344px;
+  }
+}
+
 table th {
   background: #dcdbd9;
   font-weight: normal;
-  width: 144px;
   border-bottom: 1px solid #707070;
+}
+
+@media (max-width: 375px) {
+  table th {
+    font: normal 14px/19px "Noto Sans JP";
+    padding: 0 7px;
+  }
 }
 
 table td {
@@ -874,8 +921,20 @@ table li {
   margin-left: 45px;
 }
 
+@media (max-width: 375px) {
+  table li {
+    margin-left: 25px;
+  }
+}
+
 table li:first-child {
   margin-bottom: 8px;
+}
+
+@media (max-width: 375px) {
+  table li:first-child {
+    font: normal 15px/20px "Noto Sans JP";
+  }
 }
 
 table .job-description li:not(:first-child) {
@@ -885,14 +944,34 @@ table .job-description li:not(:first-child) {
   letter-spacing: 0px;
 }
 
+@media (max-width: 375px) {
+  table .job-description li:not(:first-child) {
+    margin-left: 48px;
+    font: normal 13px/23px "Noto Sans JP";
+    margin-bottom: 0;
+  }
+}
+
 table .salary li:not(:first-child) {
   font: normal 14px/19px "Noto Sans JP";
   letter-spacing: 0px;
 }
 
+@media (max-width: 375px) {
+  table .salary li:not(:first-child) {
+    font: normal 13px/18px "Noto Sans JP";
+  }
+}
+
 table .work-time li:not(:first-child) {
   font: normal 14px/21px "Noto Sans JP";
   letter-spacing: 0px;
+}
+
+@media (max-width: 375px) {
+  table .work-time li:not(:first-child) {
+    font: normal 13px/21px "Noto Sans JP";
+  }
 }
 
 .main-others__contact-page {
@@ -901,8 +980,32 @@ table .work-time li:not(:first-child) {
   margin-bottom: 320px;
 }
 
-.main-others__contact-page--heading {
+@media (max-width: 375px) {
+  .main-others__contact-page {
+    max-width: 286px;
+    margin-bottom: 240px;
+  }
+}
+
+.main-others__contact-page--heading-pc {
   margin-bottom: 40px;
+}
+
+@media (max-width: 375px) {
+  .main-others__contact-page--heading-pc {
+    display: none;
+  }
+}
+
+.main-others__contact-page--heading-sp {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .main-others__contact-page--heading-sp {
+    display: block;
+    margin-bottom: 32px;
+  }
 }
 
 .main-others__contact-page--paragraph {
@@ -914,5 +1017,17 @@ table .work-time li:not(:first-child) {
   width: 541px;
   white-space: nowrap;
   margin-left: -39px;
+}
+
+@media (max-width: 375px) {
+  .main-others__contact-page--paragraph {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-others__contact-page .main-others__form--contact p {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
