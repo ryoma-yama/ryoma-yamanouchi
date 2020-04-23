@@ -44,6 +44,12 @@ a:hover {
   margin: 0 auto;
 }
 
+@media (max-width: 375px) {
+  header {
+    height: 56px;
+  }
+}
+
 .header-nav {
   padding: 0 96px;
   font: normal 16px/22px "Noto Sans JP";
@@ -192,6 +198,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-article {
+    margin-top: -56px;
     padding-top: 200px;
     background: transparent url(images/home_top_sp.png) 0 0 / contain no-repeat
       padding-box;
