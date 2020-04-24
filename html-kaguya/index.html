@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="家具屋課題のHOMEページです。">
     <title>家具屋課題のHOMEページ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -68,7 +68,7 @@
         </article>
         <article class="main-others">
           <h2 class="main-others__heading--catalog">公式カタログ</h2>
-          <p class="main-others__paragraph--catalog">様々なスタイルをご提案いたします。オーダーメイドも可能です。 詳しくはカタログをご覧ください。</p>
+          <p class="main-others__paragraph--catalog">様々なスタイルをご提案いたします。オーダーメイドも可能です。<br>詳しくはカタログをご覧ください。</p>
           <p class="main-others__button--catalog"><a href="ctlg.pdf">カタログをダウンロード</a></p>
         </article>
         <article class="main-others">
@@ -77,12 +77,13 @@
             <p><input type="text" name="name" id="name-field" placeholder="お名前"></p>
             <p><input type="email" name="email" id="email-field" placeholder="メールアドレス"></p>
             <p><textarea name="comment" id="comment" placeholder="お問い合わせ内容"></textarea></p>
-            <p><input type="submit" name="submit" value="SEND" id="submit"></p>
+            <p class="submit-uppercase-pc"><input type="submit" name="submit" value="SEND" id="submit-pc"></p>
+            <p class="submit-uppercase-sp"><input type="submit" name="submit" value="Send" id="submit-sp"></p>
           </form>
         </article>
         <article class="main-others">
           <h2 class="main-others__heading--recruit">RECRUIT</h2>
-          <p class="main-others__paragraph--recruit">現在Staffを募集しております。 詳しくは詳細ページをご覧ください。</p>
+          <p class="main-others__paragraph--recruit">現在Staffを募集しております。 <br>詳しくは詳細ページをご覧ください。</p>
           <p class="main-others__view-more--recruit"><a href="recruit.html">view more</a></p>
         </article>
       </article>
@@ -90,6 +91,7 @@
     <footer>
       <nav class="footer-nav">
         <img class="footer-nav__img" src="images/logo_footer.png" srcset="images/logo_footer.png 1x, images/logo_footer@2x.png 2x" alt="htmlcss-footer">
+        <a href="index.html"><img class="footer-nav__img--sp" src="images/logo_footer.png" srcset="images/logo_footer.png 1x, images/logo_footer@2x.png 2x" alt="htmlcss-footer"></a>
         <ul class="footer-nav__menu">
           <li><a href="index.html">HOME</a></li>
           <li><a href="news.html">NEWS</a></li>
