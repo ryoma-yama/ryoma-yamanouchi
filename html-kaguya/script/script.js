@@ -27,4 +27,14 @@ $(function () {
       }
     })
   };
+
+  // HOMEページとCONTACTページの「SEND」をクリックしたらボタン文言を変更する
+  $('#submit-pc').on('click', function () {
+    $(this).val("TRANSMISSION COMPLETED");
+    $(this).addClass('submitted');
+  });
+  $('#submit-sp').on('click', function () {
+    $(this).val("TRANSMISSION COMPLETED");
+    $(this).addClass('submitted');
+  });
 });
