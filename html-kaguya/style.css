@@ -820,6 +820,7 @@ a:hover {
     padding: 11px 17px 7px 17px;
     margin-bottom: 16px;
     height: 32px;
+    width: 286px;
   }
 }
 
@@ -842,6 +843,7 @@ a:hover {
     margin-bottom: 32px;
     border: 0.5px solid #707070;
     border-radius: 11px;
+    width: 286px;
   }
 }
 
@@ -854,8 +856,7 @@ a:hover {
 }
 
 .main-others__form--contact .submit-uppercase-pc {
-  max-width: 161px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 @media (max-width: 375px) {
@@ -873,6 +874,23 @@ a:hover {
   line-height: 1;
   color: #707070;
   opacity: 1;
+  width: 161px;
+}
+
+.main-others__form--contact .submit-uppercase-pc input:hover {
+  color: #d1d1d1;
+  background-color: #919191;
+  cursor: pointer;
+}
+
+.main-others__form--contact .submit-uppercase-pc input.submitted {
+  transition: 0.7s;
+  width: 320px;
+}
+
+.main-others__form--contact .submit-uppercase-pc input.submitted:hover {
+  background: #d1d1d1;
+  color: #707070;
 }
 
 @media (max-width: 375px) {
@@ -889,10 +907,10 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__form--contact .submit-uppercase-sp {
-    max-width: 173px;
     margin: 0 auto;
     display: block;
     padding: 0;
+    text-align: center;
   }
   .main-others__form--contact .submit-uppercase-sp input {
     border: none;
@@ -905,6 +923,13 @@ a:hover {
     height: 48px;
     border-radius: 30px;
     padding: 12px 64px;
+    width: 173px;
+  }
+  .main-others__form--contact .submit-uppercase-sp input.submitted {
+    padding: 0;
+    transition: 0.6s;
+    width: 320px;
+    font-size: 12px;
   }
 }
 
@@ -1079,7 +1104,7 @@ table .work-time li:not(:first-child) {
 
 @media (max-width: 375px) {
   .main-others__contact-page {
-    max-width: 286px;
+    text-align: center;
     margin-bottom: 240px;
   }
 }
