@@ -64,7 +64,8 @@ a:hover {
     background: #918f89 url(images/logo_footer.png) 50% 50%/39.69px 24px
       no-repeat padding-box;
     position: fixed;
-    z-index: 1;
+    padding: 0;
+    z-index: 2;
     left: 0;
     width: 100%;
   }
@@ -106,6 +107,83 @@ a:hover {
 
 .header-nav .current-page a {
   color: #3b3b3b;
+}
+
+.header-hamburger__btn {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .header-hamburger__btn {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    top: 19px;
+    left: 322px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .header-hamburger__btn span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-top: solid 2px #fff;
+    transition: 0.3s;
+  }
+  .header-hamburger__btn span:nth-child(2) {
+    top: 9px;
+  }
+  .header-hamburger__btn span:nth-child(3) {
+    top: 18px;
+  }
+}
+
+.header-hamburger__menu {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .header-hamburger__menu {
+    display: block;
+    transform: translateY(-100%);
+    transition: 0.3s;
+    margin-top: 56px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background: #918f89;
+    text-align: center;
+  }
+  .header-hamburger__menu li {
+    height: 88px;
+    border-bottom: 1px solid #fff;
+  }
+  .header-hamburger__menu li a {
+    line-height: 88px;
+    color: #fff;
+    font-size: 20px;
+    height: 100%;
+  }
+}
+
+.is-active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.is-active span:nth-child(2) {
+  transform: translateX(200%);
+}
+
+.is-active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.is-open {
+  transform: translateY(0%);
 }
 
 @media (max-width: 375px) {
@@ -482,7 +560,6 @@ a:hover {
 }
 
 .main-news__unordered-list li figure {
-  background-color: #000000;
   position: relative;
   max-width: 320px;
   margin: 0 auto;
@@ -490,6 +567,7 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-news__unordered-list li figure {
+    background-color: #000000;
     max-width: 272px;
   }
 }
@@ -499,7 +577,6 @@ a:hover {
 }
 
 .main-news__unordered-list li:nth-child(1) img {
-  opacity: 0.6;
   vertical-align: middle;
 }
 
@@ -510,7 +587,6 @@ a:hover {
 }
 
 .main-news__unordered-list li:nth-child(2) img {
-  opacity: 0.4;
   vertical-align: middle;
 }
 
@@ -521,7 +597,6 @@ a:hover {
 }
 
 .main-news__unordered-list li:nth-child(3) img {
-  opacity: 0.5;
   vertical-align: middle;
 }
 
@@ -543,23 +618,34 @@ a:hover {
 }
 
 .main-news__unordered-list figcaption {
+  display: none;
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
   font: normal 17px/50px "Noto Sans";
   letter-spacing: -0.85px;
   color: #ffffff;
   text-shadow: 0px 0px 6px #000000e0;
+  background-color: #000000;
+  opacity: 0.6;
+  padding: 135px 0;
 }
 
 @media (max-width: 375px) {
   .main-news__unordered-list figcaption {
+    display: block;
     font: normal 15px/32px "Noto Sans";
     letter-spacing: -0.75px;
     text-shadow: none;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    opacity: 1;
+    padding: 0;
   }
 }
 
@@ -734,6 +820,7 @@ a:hover {
     padding: 11px 17px 7px 17px;
     margin-bottom: 16px;
     height: 32px;
+    width: 286px;
   }
 }
 
@@ -756,6 +843,7 @@ a:hover {
     margin-bottom: 32px;
     border: 0.5px solid #707070;
     border-radius: 11px;
+    width: 286px;
   }
 }
 
@@ -768,8 +856,7 @@ a:hover {
 }
 
 .main-others__form--contact .submit-uppercase-pc {
-  max-width: 161px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 @media (max-width: 375px) {
@@ -787,6 +874,23 @@ a:hover {
   line-height: 1;
   color: #707070;
   opacity: 1;
+  width: 161px;
+}
+
+.main-others__form--contact .submit-uppercase-pc input:hover {
+  color: #d1d1d1;
+  background-color: #919191;
+  cursor: pointer;
+}
+
+.main-others__form--contact .submit-uppercase-pc input.submitted {
+  transition: 0.7s;
+  width: 320px;
+}
+
+.main-others__form--contact .submit-uppercase-pc input.submitted:hover {
+  background: #d1d1d1;
+  color: #707070;
 }
 
 @media (max-width: 375px) {
@@ -803,10 +907,10 @@ a:hover {
 
 @media (max-width: 375px) {
   .main-others__form--contact .submit-uppercase-sp {
-    max-width: 173px;
     margin: 0 auto;
     display: block;
     padding: 0;
+    text-align: center;
   }
   .main-others__form--contact .submit-uppercase-sp input {
     border: none;
@@ -819,6 +923,13 @@ a:hover {
     height: 48px;
     border-radius: 30px;
     padding: 12px 64px;
+    width: 173px;
+  }
+  .main-others__form--contact .submit-uppercase-sp input.submitted {
+    padding: 0;
+    transition: 0.6s;
+    width: 320px;
+    font-size: 12px;
   }
 }
 
@@ -993,7 +1104,7 @@ table .work-time li:not(:first-child) {
 
 @media (max-width: 375px) {
   .main-others__contact-page {
-    max-width: 286px;
+    text-align: center;
     margin-bottom: 240px;
   }
 }
