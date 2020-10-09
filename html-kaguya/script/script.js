@@ -16,4 +16,15 @@ $(function () {
     $('.header-hamburger__btn').toggleClass('is-active');
   });
 
+  // NEWSページの画像ホバー時のアニメーション
+  if (matchMedia('(min-width: 376px)').matches) {
+    $('.newsHover').on({
+      'mouseenter': function () {
+        $(this).find('figcaption').stop().slideDown(300);
+      },
+      'mouseleave': function () {
+        $(this).find('figcaption').stop().slideUp(300);
+      }
+    })
+  };
 });
